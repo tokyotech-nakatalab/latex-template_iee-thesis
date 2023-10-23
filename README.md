@@ -5,8 +5,7 @@
 ## 特徴
 
 - Docker コンテナを使用して, ローカル環境に Latex の環境を構築しなくても Latex のビルドが可能
-- textlint による原稿の自動校正機能
-- GitHub Actions を用いた自動ビルドにも対応
+- textlint と GitHub Actions を用いた自動校正機能
   - reviewdog により, pull-request 時に自動でコメントを reviewlog に表示
 
 ## 環境構築
