@@ -39,8 +39,8 @@ VS Code
 1. ディレクトリに入る
    > cd latex-template_iee-thesis
 1. make コマンドで Latex のコンパイルを実行したり, 中間ファイルを削除したり, textlint による校正もできる. 
-   > make pdf # コンパイルを実行, PDF ファイルが生成される   
-   > make clean # 中間ファイルを消す
+   > make pdf # コンパイルを実行, PDF ファイルが生成される    
+   > make clean # 中間ファイルを消す   
    > make lint # textlint による校正を行う. 
 
 VS Code を用いて tex の編集を行う場合尾, tex ソースを保存するたびにコンパイルが実行される. 
