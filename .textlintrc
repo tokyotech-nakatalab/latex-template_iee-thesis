@@ -12,7 +12,13 @@
         }
     },
     "rules": {
-
+        "ja-hiragana-fukushi": true,
+        "ja-hiragana-keishikimeishi": true,
+        "ja-hiragana-hojodoushi": true,
+        "ja-no-weak-phrase": true,
+        "@textlint-ja/no-synonyms": true,
+        "preset-ja-spacing": true,
+        "no-mixed-zenkaku-and-hankaku-alphabet": true,
         "preset-ja-technical-writing": {
             "no-invalid-control-character": true,
             "no-unmatched-pair": true,

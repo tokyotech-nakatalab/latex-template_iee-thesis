@@ -15,10 +15,12 @@ RUN npm install -g textlint \
     textlint-rule-preset-japanese \
     textlint-rule-preset-jtf-style \
     textlint-rule-prh \
+    textlint-rule-ja-no-weak-phrase \
     textlint-rule-spellcheck-tech-word \
     textlint-rule-no-mix-dearu-desumasu \
     textlint-rule-ja-hiragana-fukushi \
     textlint-rule-ja-hiragana-keishikimeishi \
     textlint-rule-ja-hiragana-hojodoushi \
     @textlint-ja/textlint-rule-no-synonyms \
+    textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet \
     sudachi-synonyms-dictionary 
