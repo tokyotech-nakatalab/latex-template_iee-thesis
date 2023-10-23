@@ -1,0 +1,17 @@
+# Dockerfile.textlint
+FROM node:14
+
+WORKDIR /workdir
+
+# textlintと必要なプラグインをインストール
+RUN npm install -g textlint \
+    textlint-rule-preset-ja-spacing \
+    textlint-rule-preset-ja-technical-writing \
+    textlint-rule-ja-hiragana-fukushi \
+    textlint-rule-ja-hiragana-keishikimeishi \
+    textlint-rule-ja-hiragana-hojodoushi \
+    @textlint-ja/textlint-rule-no-synonyms \
+    sudachi-synonyms-dictionary \
+    textlint-plugin-latex2e
+
+CMD ["textlint"]

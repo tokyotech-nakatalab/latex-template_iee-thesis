@@ -1,0 +1,82 @@
+\documentclass[bachelor,supervisor]{keieithesis} %卒論の場合"master"を"bachelor"に，博論の場合"doctor"に変更
+\usepackage{fancybox,calc}
+\usepackage{amsthm,amsmath,txfonts,bm,latexsym, colortbl,bm}
+\usepackage{ascmac,amssymb,amsfonts,booktabs,multirow}
+\usepackage{algorithm, algorithmic} %アルゴリズム
+\usepackage{url} %URLの表記用
+\usepackage[dvipdfmx]{graphicx}
+\allowdisplaybreaks[1]
+
+
+
+\newcommand{\argmax}{\mathop{\rm arg~max}\limits}
+\newcommand{\argmin}{\mathop{\rm arg~min}\limits}
+\newtheorem{theorem}{定理}[chapter]
+\newtheorem{proposition}{命題}[chapter]
+\newtheorem{remark}{注意}[chapter]
+\newtheorem{definition}{定義}[chapter]
+\newtheorem{example}{例}[chapter]
+\newtheorem{corollary}{系}[chapter]
+\renewcommand{\proofname}{\bf 証明}
+\newtheorem{lemma}{補題}[chapter]
+
+
+\title{タイトル}%タイトル
+%\titlewidth{}% タイトル幅 (指定するときは単位つきで)不要ならコメントアウト
+\etitle{title}%英文タイトル（必要はない）
+\author{西之園 萌絵}%氏名
+\eauthor{Name}%英文氏名
+\studentid{21B00000}%学籍番号
+\supervisor{犀川 創平 教授}% 指導教官名（役職まで含めて書く）
+\handin{2023}{2}% 提出年, 月
+
+\begin{document}
+\maketitle
+\frontmatter
+
+% 英文概要（修士のみ）
+\begin{eabstract}
+abstract
+\end{eabstract}
+
+% 和文概要
+\begin{abstract}
+概要
+
+\end{abstract}
+
+\tableofcontents
+
+\mainmatter
+%本文領域
+% \include{file}などで章ごとにファイルを分割してもよし
+\include{1}
+\include{2}
+\include{3}
+\include{4}
+\include{5}
+\include{6}
+
+\backmatter% ここから後付，謝辞やAppendix, 参考文献など
+\chapter*{謝辞}
+
+謝辞
+\begin{flushright}
+2023年~2月~~~名前~名前
+\end{flushright}
+
+
+
+% 以下参考文献
+% bibファイルを利用する場合は以下の形式
+% \include{bibliography}
+\bibliography{bibliography} %hoge.bibから拡張子を外した名前
+\bibliographystyle{junsrt} %junsrtは変更不要
+
+\appendix
+%Appendix領域
+% \chapter{}とすると，付録Aが生成される．名前は必要なし．2つ以上だと付録B, Cと続く．本文と同様\include{file}の利用も可能
+\include{appendix}
+
+\end{document}
+
