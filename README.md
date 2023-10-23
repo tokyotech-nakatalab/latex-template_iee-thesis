@@ -25,7 +25,7 @@ Docker 環境
 VS Code
 - Latex Workshop をインスト―ル
 - VS Code の `settig.json` に以下を追記
-  ```json
+  ``` json
   “latex-workshop.latex.recipe.default”: “latexmk (latexmkrc)”,
   “latex-workshop.docker.enabled”: true,
   “latex-workshop.docker.image.latex”: “texlive/texlive”,
@@ -36,15 +36,12 @@ VS Code
 ## ローカル環境での編集の仕方
 
 1. GitHub からクローンする
-> git clone https://github.com/tokyotech-nakatalab/latex-template_iee-thesis.git
-
+   > git clone https://github.com/tokyotech-nakatalab/latex-template_iee-thesis.git
 1. ディレクトリに入る
-> cd latex-template_iee-thesis
-
+   > cd latex-template_iee-thesis
 1. make コマンドで Latex のコンパイルを実行したり, 中間ファイルを削除したりする.
-
-> make pdf # コンパイルを実行, PDF ファイルが生成される
-> make clean # 中間ファイルを消す
+   > make pdf # コンパイルを実行, PDF ファイルが生成される
+   > make clean # 中間ファイルを消す
 
 
 ## GitHub Actions による自動校正
