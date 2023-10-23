@@ -24,7 +24,7 @@ Docker 環境
 VS Code
 - Latex Workshop をインスト―ル
 - VS Code の `settig.json` に以下を追記
-  ``` json
+  ```
   “latex-workshop.latex.recipe.default”: “latexmk (latexmkrc)”,
   “latex-workshop.docker.enabled”: true,
   “latex-workshop.docker.image.latex”: “texlive/texlive”,
