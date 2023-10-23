@@ -43,7 +43,7 @@ VS Code
    > make clean # 中間ファイルを消す   
    > make lint # textlint による校正を行う. 
 
-VS Code を用いて tex の編集を行う場合尾, tex ソースを保存するたびにコンパイルが実行される. 
+VS Code を用いて tex の編集を行う場合, tex ソースを保存するたびにコンパイルが実行される. 
 
 ## GitHub Actions による自動校正
 
