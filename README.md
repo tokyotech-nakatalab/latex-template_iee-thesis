@@ -31,16 +31,17 @@ VS Code
   “latex-workshop.view.pdf.viewer”: “tab”
   ```
 
-## ローカル環境での編集の仕方
+## ローカル環境での操作
 
 1. GitHub からクローンする
    > git clone https://github.com/tokyotech-nakatalab/latex-template_iee-thesis.git
 1. ディレクトリに入る
    > cd latex-template_iee-thesis
 1. make コマンドで Latex のコンパイルを実行したり, 中間ファイルを削除したりする.
-   > make pdf # コンパイルを実行, PDF ファイルが生成される
+   > make pdf # コンパイルを実行, PDF ファイルが生成される   
    > make clean # 中間ファイルを消す
 
+VS Code を使う場合は, tex ソースを保存するたびにコンパイルが実行される. 
 
 ## GitHub Actions による自動校正
 
