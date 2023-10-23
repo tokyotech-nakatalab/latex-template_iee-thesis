@@ -18,7 +18,6 @@
 Docker 環境
 - Docker Desktop for Mac 2.1 or later
 - Docker 18.06 or later
-- Docker Desktop for Windows
 
 
 VS Code
