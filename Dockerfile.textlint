@@ -1,17 +1,24 @@
-# Dockerfile.textlint
-FROM node:14
+FROM node:latest
 
 WORKDIR /workdir
 
 # textlintと必要なプラグインをインストール
 RUN npm install -g textlint \
+    textlint-rule-preset-ja-technical-writing \
+    @proofdict/textlint-rule-proofdict \
+    technical-word-rules \
+    textlint-filter-rule-allowlist \
+    textlint-filter-rule-comments \
+    textlint-plugin-latex2e \
     textlint-rule-preset-ja-spacing \
     textlint-rule-preset-ja-technical-writing \
+    textlint-rule-preset-japanese \
+    textlint-rule-preset-jtf-style \
+    textlint-rule-prh \
+    textlint-rule-spellcheck-tech-word \
+    textlint-rule-no-mix-dearu-desumasu \
     textlint-rule-ja-hiragana-fukushi \
     textlint-rule-ja-hiragana-keishikimeishi \
     textlint-rule-ja-hiragana-hojodoushi \
     @textlint-ja/textlint-rule-no-synonyms \
-    sudachi-synonyms-dictionary \
-    textlint-plugin-latex2e
-
-CMD ["textlint"]
+    sudachi-synonyms-dictionary 
