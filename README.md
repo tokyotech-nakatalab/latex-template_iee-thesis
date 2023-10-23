@@ -21,6 +21,8 @@ Docker 環境
 - Docker 18.06 or later
 
 
+
+
 VS Code
 - Latex Workshop をインスト―ル
 - VS Code の `settig.json` に以下を追記
@@ -32,7 +34,10 @@ VS Code
   “latex-workshop.view.pdf.viewer”: “tab”
   ```
 
-## ローカル環境での操作操作方法
+## ローカル環境での操作方法
+
+Docker コンテナを用いて, Latex や textlint の環境を構築せずに PDF のビルドや校正を行うことができます.
+
 
 1. GitHub からクローンする
    > git clone https://github.com/tokyotech-nakatalab/latex-template_iee-thesis.git
@@ -46,6 +51,8 @@ VS Code
 VS Code を用いて tex の編集を行う場合, tex ソースを保存するたびにコンパイルが実行される. 
 
 ## GitHub Actions による自動校正
+
+GitHub Actions を用いて, pull-request 時に textlint による校正結果を review log に表示することができます. 
 
 1. 適当にブランチを切って, 原稿のファイルを編集する.
 2. 編集したファイルをブランチにプッシュする. 
