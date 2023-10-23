@@ -5,8 +5,9 @@
 ## 特徴
 
 - Docker コンテナを使用して, ローカル環境に Latex の環境を構築しなくても Latex のビルドが可能
-- textlint と GitHub Actions を用いた自動校正機能
-  - reviewdog により, pull-request 時に自動でコメントを reviewlog に表示
+- textlint による校正機能
+  - GitHub Actions を用いた reviewdog により, pull-request 時に自動でコメントを review log に表示
+  - Docker コンテナを用いて環境構築せずローカル環境での校正も実施可能. 
 
 ## 環境構築
 
@@ -31,17 +32,18 @@ VS Code
   “latex-workshop.view.pdf.viewer”: “tab”
   ```
 
-## ローカル環境での操作
+## ローカル環境での操作操作方法
 
 1. GitHub からクローンする
    > git clone https://github.com/tokyotech-nakatalab/latex-template_iee-thesis.git
 1. ディレクトリに入る
    > cd latex-template_iee-thesis
-1. make コマンドで Latex のコンパイルを実行したり, 中間ファイルを削除したりする.
+1. make コマンドで Latex のコンパイルを実行したり, 中間ファイルを削除したり, textlint による校正もできる. 
    > make pdf # コンパイルを実行, PDF ファイルが生成される   
    > make clean # 中間ファイルを消す
+   > make lint # textlint による校正を行う. 
 
-VS Code を使う場合は, tex ソースを保存するたびにコンパイルが実行される. 
+VS Code を用いて tex の編集を行う場合尾, tex ソースを保存するたびにコンパイルが実行される. 
 
 ## GitHub Actions による自動校正
 
@@ -62,8 +64,8 @@ MIT ライセンス (だが当面は研究室内部での公開)
 ## 謝辞
 
 本リポジトリ作成にあたっては, Shoma Kokuryo さんのリポジトリとブログを参考にした:
-- https://github.com/being24/latex-template-ja
-- https://poyo.hatenablog.jp/entry/2020/12/05/110000
+- https://github.com/being24/latex-template-ja,
+- https://poyo.hatenablog.jp/entry/2020/12/05/110000.
 
 
 ## Contributer 
