@@ -5,7 +5,7 @@
         "lint-style": "textlint -f checkstyle *.tex"
     },
     "dependencies": {
-        "textlint": "^13.3.3",
+        "textlint": "^13.4.1",
         "textlint-plugin-latex2e": "^1.2.1",
         "textlint-rule-preset-ja-technical-writing": "^8.0.0",
         "textlint-rule-preset-ja-spacing": "^2.3.0",
